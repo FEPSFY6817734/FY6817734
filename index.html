@@ -124,7 +124,7 @@
       <p id="7"> <a href="https://books.google.co.uk/books?id=BLlmimePW18C&q=%22shear+thinning%22&pg=PA8&redir_esc=y#v=snippet&q=%22shear%20thinning%22&f=false" target="_blank" >M.A.Rao. (2007) Rheology of Fluids and Semisold Foods: Principle and Application. Available at: Rheology of Fluid and Semisolid Foods: Principles and Applications - M. A. Andy Rao - Google Books  (Accessed: 27 November 2023).</a></p>
  <script>
             var slideImages = ["Slide1.JPG","Slide2.JPG","Slide3.JPG","Slide4.JPG","Slide5.JPG"];
-            var currentSlide = 2;
+            var currentSlide = 0;
           function showSlide() {
                 document.getElementById('Slide1.JPG').src = slideImages[currentSlide];
           } 
@@ -137,7 +137,7 @@
             showSlide():   
          } 
        function showSlideNumber(slideNumber) {
-             currentSlide = slideNumber -1;
+             currentSlide = slideNumber -  1;
              showSlide();
        }
  </script>
@@ -148,11 +148,11 @@
              <button class="button" onclick="nextSlide()">Next</button>
        </div>
        <div class="slide-number-container">
-             <button class="button" onclick="showSlideNumber(1)">1</button>
-             <button class="button" onclick="showSlideNumber(2)">2</button>
-             <button class="button" onclick="showSlideNumber(3)">3</button>
-             <button class="button" onclick="showSlideNumber(4)">4</button>
-             <button class="button" onclick="showSlideNumber(5)">5</button>
+             <button id="slide" class="button" onclick="showSlideNumber(1)">1</button>
+             <button id="slide" class="button" onclick="showSlideNumber(2)">2</button>
+             <button id="slide" class="button" onclick="showSlideNumber(3)">3</button>
+             <button id="slide" class="button" onclick="showSlideNumber(4)">4</button>
+             <button id="slide" class="button" onclick="showSlideNumber(5)">5</button>
        </div>
 </body>
 </html>
