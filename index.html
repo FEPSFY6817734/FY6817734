@@ -127,7 +127,7 @@
             var slideImages = ["Slide1.JPG","Slide2.JPG","Slide3.JPG","Slide4.JPG","Slide5.JPG"];
             var currentSlide = 0;
           function showSlide() {
-                document.getElementById("Slide1.JPG").src = slideImages[currentSlide];
+                document.getElementById("slide").src = (slideImages[currentSlide]);
           } 
          function nextSlide() {
             currentSlide = (currentSlide + 1) % slideImages.length;
@@ -156,6 +156,6 @@
              <button  class="button" onclick="showSlideNumber(4)">4</button>
              <button  class="button" onclick="showSlideNumber(5)">5</button>
        </div> 
-        showSlide();
+        if 
 </body>
 </html>
