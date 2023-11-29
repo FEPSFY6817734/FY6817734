@@ -123,11 +123,24 @@
       <p id="6"><a href="https://books.google.co.uk/books?id=pww5cxwitHAC&q=thixotropic&pg=PA359&redir_esc=y" target="_blank">Paul N. Garay (1996) Pump Application Desk Book, 3ed. Available at: Pump Application Desk Book - Paul N. Garay - Google Books  (Accessed: 27 November 2023).</a></p>
       <p id="7"> <a href="https://books.google.co.uk/books?id=BLlmimePW18C&q=%22shear+thinning%22&pg=PA8&redir_esc=y#v=snippet&q=%22shear%20thinning%22&f=false" target="_blank" >M.A.Rao. (2007) Rheology of Fluids and Semisold Foods: Principle and Application. Available at: Rheology of Fluid and Semisolid Foods: Principles and Applications - M. A. Andy Rao - Google Books  (Accessed: 27 November 2023).</a></p>
 <h2>Conference Presentation:The effect on viscosity on transportation of crude oil.</h2>
+         <div id="slide-container">
+            <img id="slide" src="Slide5.JPG" alt="Slide 1" style="width:100%; max-width:800px;">
+       <div class="button-container">
+             <button class="button" onclick="prevSlide()">Previous</button>
+             <button class="button" onclick="nextSlide()">Next</button>
+       </div>
+       <div class="slide-number-container">
+             <button  class="button" onclick="showSlideNumber(1)">1</button>
+             <button  class="button" onclick="showSlideNumber(2)">2</button>
+             <button  class="button" onclick="showSlideNumber(3)">3</button>
+             <button  class="button" onclick="showSlideNumber(4)">4</button>
+             <button  class="button" onclick="showSlideNumber(5)">5</button>
+       </div>  
       <script>
             var slideImages = ["Slide1.JPG","Slide2.JPG","Slide3.JPG","Slide4.JPG","Slide5.JPG"];
             var currentSlide = 0;
           function showSlide() {
-                document.getElementById("slide").src = "Slide3.JPG";
+                document.getElementById("slide").src = slideImage[currentSlide];
           } 
          function nextSlide() {
             currentSlide = (currentSlide + 1) % slideImages.length;
@@ -141,20 +154,9 @@
              currentSlide = slideNumber -  1;
              showSlide();
        }
+        showSlide();    
    </script>
       
-       <div id="slide-container">
-            <img id="slide" src="Slide1.JPG" alt="Slide 1" style="width:100%; max-width:800px;">
-       <div class="button-container">
-             <button class="button" onclick="prevSlide()">Previous</button>
-             <button class="button" onclick="nextSlide()">Next</button>
-       </div>
-       <div class="slide-number-container">
-             <button  class="button" onclick="showSlideNumber(1)">1</button>
-             <button  class="button" onclick="showSlideNumber(2)">2</button>
-             <button  class="button" onclick="showSlideNumber(3)">3</button>
-             <button  class="button" onclick="showSlideNumber(4)">4</button>
-             <button  class="button" onclick="showSlideNumber(5)">5</button>
-       </div>  
+    
 </body>
 </html>
