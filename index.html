@@ -31,20 +31,20 @@
       <script>
             var slideImages = ["Slide1.JPG","Slide2.JPG","Slide3.JPG","Slide4.JPG","Slide5.JPG"];
             var currentSlide = 0;
-          function showSlide(){
-                document.getElementById('slide').src = slideImages[currentSlide];
+          function showSlide() {
+                document.getElementById('Slide').src = slideImages[currentSlide];
           } 
-         function nextSlide(){
+         function nextSlide() {
             currentSlide = (currentSlide + 1) % slideImages.length;
             showSlide();   
          } 
-         function prevSlide(){
-            currentSlide = (currentSlides - 1 + slideImage.length) % slideImages.length;
+         function prevSlide() {
+            currentSlide = (currentSlide - 1 + slideImage.length) % slideImages.length;
             showSlide():   
          } 
-       function showsSlideNumber(slideNumber) {
+       function showSlideNumber(slideNumber) {
              currentSlide = slideNumber -1;
-             showsSlide();
+             showSlide();
        }
        showSlide();
       </script>
