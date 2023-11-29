@@ -130,11 +130,11 @@
              <button class="button" onclick="nextSlide()">Next</button>
        </div>
        <div class="slide-number-container">
-             <button  class="button" onclick="showSlideNumber(1)">1</button>
-             <button  class="button" onclick="showSlideNumber(2)">2</button>
-             <button  class="button" onclick="showSlideNumber(3)">3</button>
-             <button  class="button" onclick="showSlideNumber(4)">4</button>
-             <button  class="button" onclick="showSlideNumber(5)">5</button>
+             <button  class="button" onclick="changeImage('Slide1.JPG')">1</button>
+             <button  class="button" onclick="changeImage('Slide2.JPG')">2</button>
+             <button  class="button" onclick="changeImage('Slide3.JPG')">3</button>
+             <button  class="button" onclick="changeImage('Slide4.JPG')">4</button>
+             <button  class="button" onclick="changeImage('Slide5.JPG')">5</button>
        </div>  
       <script>
             var slideImages = ["Slide1.JPG","Slide2.JPG","Slide3.JPG","Slide4.JPG","Slide5.JPG"];
@@ -150,9 +150,9 @@
             currentSlide = (currentSlide - 1 + slideImage.length) % slideImages.length;
             showSlide():   
          } 
-       function showSlideNumber(slideNumber) {
-             currentSlide = slideNumber -  1;
-             showSlide();
+       function changeImage(fileName) {
+            let img = document.querySelector("#slide");
+             img.setAttribute("src",fileName);
        }
         showSlide();    
    </script>
