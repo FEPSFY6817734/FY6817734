@@ -32,7 +32,7 @@
             var slideImages = ["Slide1.JPG","Slide2.JPG","Slide3.JPG","Slide4.JPG","Slide5.JPG"];
             var currentSlide = 0;
           function showSlide() {
-                document.getElementById('slide').src = slideImages[currentSlide];
+                document.getElementById('Slide').src = slideImages[currentSlide];
           } 
          function nextSlide() {
             currentSlide = (currentSlide + 1) % slideImages.length;
@@ -49,7 +49,7 @@
       showSlide();    
    </script>
       <div id="slide-container">
-            <img id="slide" src="Slide4.JPG" alt="Slide 1" style="width:100%; max-width:800px;">
+            <img id="Slide" src="Slide4.JPG" alt="Slide 1" style="width:100%; max-width:800px;">
             
        <div class="button-container">
              <button class="button" onclick="prevSlide()">Previous</button>
