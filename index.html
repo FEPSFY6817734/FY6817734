@@ -132,19 +132,16 @@
       }
       function nextSlide(){
             currentSlide = (currentSlide + 1) % slideImages.length;
-            showsSlide();
+            showSlide();
       }
-
       function prevSlide(){
             currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
             showSlide();
       }
-
       function showSlideNumber(slideNumber) {
             currentSlide = slideNumber -1;
             showSlide();
       }
-
       showSlide();
 </script>    
 
